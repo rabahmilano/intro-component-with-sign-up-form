@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  background: $red url(../../images/bg-intro-mobile.png) top center no-repeat;
+  min-height: 100vh;
+
+  @include breakpoint-up(xlarge) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $red url(../../images/bg-intro-desktop.png) top center no-repeat;
+    background-size: cover;
+  }
+}
+
+img {
+  box-sizing: content-box;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}

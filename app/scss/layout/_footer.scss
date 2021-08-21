@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  color: $blueDark;
+  font-size: 12px;
+
+  .attribution a {
+    color: $blue;
+    text-decoration: underline;
+    transition: color .3s ease-in-out;
+  }
+
+  .attribution a:hover {
+    color: white;
+  }
+}

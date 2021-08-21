@@ -1,0 +1,11 @@
+main {
+  width: 85%;
+  max-width: 1110px;
+  margin: 1rem auto;
+
+  @include breakpoint-up(xlarge) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}

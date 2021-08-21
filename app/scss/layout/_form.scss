@@ -1,0 +1,82 @@
+.form {
+  padding-bottom: 2rem;
+
+  &__free {
+    color: white;
+    background: $blue;
+    padding: 1rem 3rem;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 11px;
+    line-height: 2;
+    box-shadow: 0 10px 2px rgba(black, .2);
+
+    & a {
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  &__img__error {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    // z-index: 1;
+
+    &.show {
+      z-index: 1;
+    }
+  }
+
+  &__text__error {
+    display: none;
+    font-size: .8rem;
+    text-align: right;
+    margin-top: 5px;
+    color: $red;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &__terms {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 11px;
+    text-align: center;
+    color: $blueGrayish;
+    line-height: 2;
+
+    & a {
+      text-decoration: none;
+      font-weight: 600;
+      color: $red;
+    }
+  }
+
+  &__formulaire {
+    margin: 1.3rem 0;
+
+    & .formulaire {
+      background: white;
+      padding: 20px;
+      border-radius: 11px;
+      box-shadow: 0 10px 2px rgba(black, .2);
+    }
+  }
+
+  @include breakpoint-up(xlarge) {
+    padding: 0;
+
+    &__free {
+      font-size: 16px;
+    }
+
+    & .formulaire {
+      padding: 3rem 2.5rem;
+    }
+  }
+}
